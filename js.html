@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de JavaScript Interactif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactivité avec JavaScript</h1>
+    
+    <div class="container">
+        <h2>Calculatrice Simple</h2>
+        <input type="text" id="num1" placeholder="Premier nombre">
+        <input type="text" id="num2" placeholder="Deuxième nombre">
+        <button onclick="calculer()">Calculer</button>
+        <div class="result" id="resultCalc"></div>
+    </div>
+
+    <div class="container">
+        <h2>Changer la Couleur du Texte</h2>
+        <input type="text" id="colorInput" placeholder="Entrez une couleur (nom ou hex)">
+        <button onclick="changerCouleur()">Changer la couleur</button>
+        <p id="textToChange">Ce texte changera de couleur.</p>
+    </div>
+
+    <div class="container">
+        <h2>Afficher un Message</h2>
+        <input type="text" id="messageInput" placeholder="Entrez un message">
+        <button onclick="afficherMessage()">Afficher le message</button>
+        <div class="result" id="resultMessage"></div>
+    </div>
+
+    <script>
+        function calculer() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('resultCalc').textContent = 'Veuillez entrer des nombres valides.';
+            } else {
+                var somme = num1 + num2;
+                document.getElementById('resultCalc').textContent = 'Le résultat est: ' + somme;
+            }
+        }
+
+        function changerCouleur() {
+            var couleur = document.getElementById('colorInput').value;
+            document.getElementById('textToChange').style.color = couleur;
+        }
+
+        function afficherMessage() {
+            var message = document.getElementById('messageInput').value;
+            document.getElementById('resultMessage').textContent = message;
+        }
+    </script>
+</body>
+</html>
