@@ -34,6 +34,7 @@ let x;                    // Undefined
 ```
 
 ### 3. **Opérateurs**
+
 JavaScript comprend des opérateurs arithmétiques, de comparaison, logiques, et plus.
 
 - **Arithmétiques** : `+`, `-`, `*`, `/`, `%`
@@ -47,6 +48,7 @@ let nonEgal = (10 != "10");    // false (comparaison de valeur seulement)
 ```
 
 ### 4. **Structures de Contrôle**
+
 JavaScript utilise des structures conditionnelles et des boucles pour contrôler le flux d'exécution.
 
 - **Conditionnelles** : `if`, `else`, `switch`
@@ -65,6 +67,7 @@ for (let i = 0; i < 5; i++) {
 ```
 
 ### 5. **Fonctions**
+
 Les fonctions sont des blocs de code réutilisables. Elles peuvent être déclarées ou exprimées.
 
 ```javascript
@@ -80,6 +83,7 @@ const multiplier = (x, y) => x * y;  // Fonction fléchée
 ```
 
 ### 6. **Gestion des Événements**
+
 JavaScript est souvent utilisé pour ajouter de l'interactivité aux pages web par la gestion des événements.
 
 ```javascript
@@ -89,6 +93,7 @@ document.getElementById("monBouton").addEventListener("click", function() {
 ```
 
 ### 7. **Manipulation du DOM**
+
 JavaScript peut manipuler le Document Object Model (DOM) pour modifier la structure, le style et le contenu des pages web.
 
 ```javascript

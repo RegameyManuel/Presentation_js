@@ -11,9 +11,10 @@ Un **langage compilé** et un **langage interprété** se distinguent principale
 4. **Portabilité** : Un exécutable compilé est généralement spécifique à une architecture matérielle (par exemple, un programme compilé pour Windows sur un processeur Intel ne fonctionnera pas directement sur Linux ou sur un processeur ARM).
 
 **Exemple avec C** :
-   - Le programmeur écrit du code source en C.
-   - Il utilise un compilateur (comme GCC) pour transformer ce code en un exécutable (par exemple, `a.out` sur Linux).
-   - L'exécutable peut ensuite être directement exécuté sur la machine sans autre étape.
+
+- Le programmeur écrit du code source en C.
+- Il utilise un compilateur (comme GCC) pour transformer ce code en un exécutable (par exemple, `a.out` sur Linux).
+- L'exécutable peut ensuite être directement exécuté sur la machine sans autre étape.
 
 ### Langage interprété (exemple : JavaScript)
 
@@ -26,18 +27,21 @@ Un **langage compilé** et un **langage interprété** se distinguent principale
 4. **Portabilité** : Le code source d'un langage interprété est plus facilement portable d'un environnement à un autre, tant que l'interpréteur approprié est disponible. Par exemple, JavaScript peut être exécuté dans presque tous les navigateurs modernes, quel que soit le système d'exploitation ou l'architecture matérielle sous-jacente.
 
 **Exemple avec JavaScript** :
-   - Le développeur écrit du code source en JavaScript.
-   - Ce code est interprété par le moteur JavaScript du navigateur (comme V8 pour Chrome ou SpiderMonkey pour Firefox) à chaque fois que la page est chargée.
-   - Le navigateur interprète et exécute le code directement, sans étape intermédiaire de compilation.
+
+- Le développeur écrit du code source en JavaScript.
+- Ce code est interprété par le moteur JavaScript du navigateur (comme V8 pour Chrome ou SpiderMonkey pour Firefox) à chaque fois que la page est chargée.
+- Le navigateur interprète et exécute le code directement, sans étape intermédiaire de compilation.
 
 ### Différences clés entre C et JavaScript :
-| **Caractéristique**           | **C (Langage compilé)**                     | **JavaScript (Langage interprété)**        |
-|-------------------------------|---------------------------------------------|--------------------------------------------|
-| **Exécution**                 | Compilé avant l'exécution                   | Interprété ligne par ligne à l'exécution   |
-| **Performance**               | Généralement plus rapide                    | Généralement plus lent                     |
-| **Dépannage**                 | Les erreurs sont trouvées à la compilation  | Les erreurs sont détectées à l'exécution   |
-| **Portabilité**               | Exécutable spécifique à l'architecture      | Code source portable via interpréteurs     |
-| **Modifications rapides**     | Requiert une recompilation                  | Pas de recompilation nécessaire            |
+
+| **Caractéristique**       | **C (Langage compilé)**                    | **JavaScript (Langage interprété)**      |
+| ------------------------- | ------------------------------------------ | ---------------------------------------- |
+| **Exécution**             | Compilé avant l'exécution                  | Interprété ligne par ligne à l'exécution |
+| **Performance**           | Généralement plus rapide                   | Généralement plus lent                   |
+| **Dépannage**             | Les erreurs sont trouvées à la compilation | Les erreurs sont détectées à l'exécution |
+| **Portabilité**           | Exécutable spécifique à l'architecture     | Code source portable via interpréteurs   |
+| **Modifications rapides** | Requiert une recompilation                 | Pas de recompilation nécessaire          |
 
 ### Conclusion :
+
 Les langages compilés, comme le C, offrent des performances élevées et une exécution rapide mais nécessitent une étape de compilation préalable, tandis que les langages interprétés, comme JavaScript, permettent un développement plus souple et rapide, au détriment de la vitesse d’exécution. Le choix entre les deux types de langages dépend du contexte et des besoins spécifiques du projet.
